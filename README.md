@@ -6,9 +6,7 @@ This demonstration connects **Monte Carlo simulation, statistical convergence, a
 
 ## Live Demo
 
-[Launch the Interactive Demo](https://YOUR-USERNAME.github.io/buffons-needle-simulation/)
 
-*Replace `YOUR-USERNAME` with your GitHub username after enabling GitHub Pages.*
 
 ## Features
 
@@ -20,40 +18,42 @@ This demonstration connects **Monte Carlo simulation, statistical convergence, a
 - **Long-Needle Challenge:** Explore why the standard probability formula fails when the needle length exceeds the spacing between lines, and discover the corrected formula.
 - **Guided Introduction:** Learn about the history of π, Buffon's Needle problem, and the Law of Large Numbers.
 
+
 ## Mathematical Background
 
 Let:
 
-- (L) = needle length
-- (d) = distance between parallel lines
-- (N) = total number of needle drops
-- (C) = number of crossings
+- $L$ = needle length
+- $d$ = distance between parallel lines
+- $N$ = total number of needle drops
+- $C$ = number of crossings
 
-For a needle of length (L \leq d), the theoretical probability of crossing a line is:
+For a needle of length $L \leq d$, the theoretical probability of crossing a line is:
 
-[
+$$
 P(\text{cross}) = \frac{2L}{\pi d}
-]
+$$
 
-Using the observed crossing proportion (C/N), we obtain the Monte Carlo estimator:
+Using the observed crossing proportion $C/N$, we obtain the Monte Carlo estimator:
 
-[
+$$
 \hat{\pi} = \frac{2LN}{dC}, \qquad C>0
-]
+$$
 
 As the number of independent drops increases, the observed crossing proportion approaches its theoretical probability, illustrating the **Law of Large Numbers**.
 
 ### The Long-Needle Case
 
-When (L>d), the standard formula no longer applies.
+When $L>d$, the standard formula no longer applies.
 
-Defining (r=L/d>1), the corrected crossing probability becomes:
+Defining $r=L/d>1$, the corrected crossing probability becomes:
 
-[
+$$
 P(\text{cross})=\frac{2}{\pi}\left[r-\sqrt{r^2-1}+\operatorname{arcsec}(r)\right]
-]
+$$
 
 The interactive challenge allows users to explore this distinction and understand why mathematical assumptions matter.
+
 
 ## Acknowledgments
 
@@ -63,5 +63,3 @@ Developed as an interactive mathematics demonstration with guidance from **Profe
 
 - Weisstein, Eric W. [“Buffon's Needle Problem.”](https://mathworld.wolfram.com/BuffonsNeedleProblem.html) *MathWorld—A Wolfram Web Resource.*
 - Ventrella, Jeffrey. [“Buffon's Needle.”](https://www.ventrella.com/Buffon/) Interactive visualization, *Ventrella.com*.
-
-These resources provide mathematical background and examples of interactive visualization. The referenced websites are not part of this repository.
