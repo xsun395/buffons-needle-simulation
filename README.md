@@ -1,22 +1,20 @@
-# Buffon's Needle — Interactive Monte Carlo Simulation
+# Buffon's Needle: Interactive Monte Carlo Simulation
 
 An interactive, browser-based exploration of **Buffon's Needle**, a classic problem in geometric probability that estimates π by randomly dropping needles onto parallel lines.
 
-This demonstration connects **Monte Carlo simulation, statistical convergence, and geometric reasoning** through hands-on experimentation.
+This interactive demonstration brings together Monte Carlo simulation, the Law of Large Numbers, and geometric probability to illustrate how randomness can be used to estimate π.
 
 ## Live Demo
 
-
+https://xsun395.github.io/buffons-needle-simulation/
 
 ## Features
 
 - **Needle-Drop Simulation:** Simulate 1–1,000 random needle drops per batch, or watch an animated single drop.
 - **Real-Time Statistics:** Track total drops, line crossings, crossing proportion, and the current estimate of π.
 - **Monte Carlo Convergence:** Visualize how the estimated value of π evolves as the number of drops increases.
-- **Adjustable Parameters:** Modify needle length, distance between parallel lines, and animation speed.
 - **Interactive Geometry Explorer:** Drag the needle's midpoint or endpoints to investigate the geometric conditions for crossing a line.
 - **Long-Needle Challenge:** Explore why the standard probability formula fails when the needle length exceeds the spacing between lines, and discover the corrected formula.
-- **Guided Introduction:** Learn about the history of π, Buffon's Needle problem, and the Law of Large Numbers.
 
 
 ## Mathematical Background
@@ -49,7 +47,7 @@ When $L>d$, the standard formula no longer applies.
 Defining $r=L/d>1$, the corrected crossing probability becomes:
 
 $$
-P(\text{cross})=\frac{2}{\pi}\left[r-\sqrt{r^2-1}+\operatorname{arcsec}(r)\right]
+P(\text{cross}) = \frac{2}{\pi}\left[r-\sqrt{r^2-1}+\arccos\left(\frac{1}{r}\right)\right]
 $$
 
 The interactive challenge allows users to explore this distinction and understand why mathematical assumptions matter.
